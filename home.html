@@ -3,7 +3,8 @@
 <head>
   <title>Sign Up</title>
   
-  <script src="http://kit.fontawesome.com/03f40fc540.js" crossorigin="anonymous"></script>
+  <script src="http://kit.fontawesome.com/03f40fc540.js" crossorigin="anonymous">
+  </script>
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
@@ -19,8 +20,24 @@
         background-attachment: fixed;
         background-size: 100% 100%;
        }
+       #are
+       {
+        color: whitesmoke; 
+        font-size: 3rem;
+        padding-top: 20px; 
+        font-family:'Times New Roman', Times, serif;
+       }
+       #col12
+       {
+        text-align: left; 
+        padding-left: 275px;
+         font-family:fantasy;
+          margin-left: 0px;
+       }
+       form{
+        width:400px; margin:auto
+       }
    </style>
-
 </head>
 
 <body >
@@ -29,9 +46,9 @@
     
 <div class="row" style="padding-bottom: 27.5px; background-color:maroon;" >
   <div class="col-3" style="text-align: center; padding-left: 150px;">
-      <a  class="navbar-brand " href="/" style="color: whitesmoke; font-size: 3rem; padding-top: 20px; font-family:'Times New Roman', Times, serif;" class="heading">DBS customer rating system</a>
+      <a  class="navbar-brand" id="are" class="heading" href="/">DBS customer rating system</a>
   </div>
-  <div class="col-12" style="text-align: left; padding-left: 275px; font-family:fantasy; margin-left: 0px;">
+  <div class="col-12" id="col12">
       <h3><i>Get your rating in a easy way!!!</i></h3>
   </div>
 </div>
@@ -40,74 +57,118 @@
 
     </div>
 
-  <div class="container" style="background:#fff;
-    width: 500px;
-    height: 755px;
-    margin-top: 30px;border-radius: 1.5rem;">
-    <form method="POST" action = "/signup"  style=" width:400px; margin:auto">
-    <div class="row">
-      <div class="col" style="font-family: 'kaushan script',cursive;">
-        <h3>
-            <br>
-            <center>    
-                <strong >CUSTOMER INFORMATION</strong>
-            </center>
-        </h3>
+    <div class="firstone">
+        <div class="container" style="background:#fff;
+        width: 500px;
+        height: 755px;
+        margin-top: 30px;border-radius: 1.5rem;">
+        <form method="POST" action = "/signup">
+        <div class="row">
+          <div class="col" style="font-family: 'kaushan script',cursive;">
+            <h3>
+                <br>
+                <center>    
+                    <strong >CUSTOMER INFORMATION</strong>
+                </center>
+            </h3>
+            
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              
+                <h5>          
+                    <label for="name" >FIRSTNAME</label>
+                </h5>
+              <input type="text" name="name" id='name' class="form-control" required>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="form-group">
+                <h5>
+                    <label for="lastname" >LASTNAME</label>
+                </h5>
+              <input type="text" name="lastname" id='lastname' class="form-control" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+                <h5>
+                    <label for="ACCOUNT NUMBER" >ACCOUNT NUMBER</label>
+                </h5>
+              <input type="text" name="accountnumber" id='accountnumber' class="form-control" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+                <h5>
+                    <label for="country" >COUNTRY </label>
+                </h5>
+                  <input type="tel"  name="country" id="country" class="form-control" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+            <h5>
+                <label for="email" >TRANSACTION</label>
+            </h5>
+            <input type="transactions" name="transction" id='transaction' class="form-control" required>
+        </div>
         
-        <hr>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="form-group">
-          
-            <h5>          
-                <label for="name" >FIRSTNAME</label>
-            </h5>
-          <input type="text" name="name" id='name' class="form-control" required>
+        <div class="form-group" >
+          <button type="submit" class="btn btn-info" style="width: 200px; text-align: center; margin-left:90px; margin-top:10px;">Register</button>
         </div>
-      </div>
-      <div class="col ">
-        <div class="form-group">
-            <h5>
-                <label for="lastname" >LASTNAME</label>
-            </h5>
-          <input type="text" name="lastname" id='lastname' class="form-control" required>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="form-group">
-            <h5>
-                <label for="ACCOUNT NUMBER" >ACCOUNT NUMBER</label>
-            </h5>
-          <input type="text" name="accountnumber" id='accountnumber' class="form-control" required>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="form-group">
-            <h5>
-                <label for="country" >COUNTRY </label>
-            </h5>
-              <input type="tel"  name="country" id="country" class="form-control" required>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-        <h5>
-            <label for="email" >TRANSACTION</label>
-        </h5>
-        <input type="transactions" name="transction" id='transaction' class="form-control" required>
-    </div>
+        </form>
+      </div> 
     
-    <div class="form-group" >
-      <button type="submit" class="btn btn-info" style="width: 200px; text-align: center; margin-left:90px; margin-top:10px;">Register</button>
+      <div class="container" style="background:#fff;
+      width: 500px;
+      height: 300px;
+      margin-top: 30px;border-radius: 1.5rem;">
+      <form method="POST" action = "riskele.html">
+      <div class="row">
+        <div class="col" style="font-family: 'kaushan script',cursive;">
+          <h3>
+              <br>
+              <center>    
+                  <strong >KNOW RATING</strong>
+              </center>
+          </h3>
+          
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <form style=" width:400px; margin:auto">
+          <div class="form-group">
+              <h5>
+                  <label for="ACCOUNT NUMBER" >ACCOUNT NUMBER</label>
+              </h5>
+            <input type="text" name="accountnumber" id='accountnumber' class="form-control" required>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="form-group" >
+        <button type="submit" class="btn btn-info" style="width: 200px; text-align: center; margin-left:90px; margin-top:10px;">Account</a></button>
+      </div>
+      </form> 
+    <div class="riskdiv" style="display: none;">
+        <h3>high risk</h3>
     </div>
-    </form>
-  </div>
+    </div> 
+    
+    </div>
+
+ 
+
   <div style="padding-top: 20px;">
     <hr>
     <footer id="footer" style="padding: 4%; text-align: center;">        
